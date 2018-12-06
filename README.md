@@ -20,7 +20,7 @@ we just stick to my voice.
 ## Dependencies
 
 The dependencies are listed in the requirement.txt file. Navigate to the root
-directory, create and activate a python environment and run "pip install -r requirements.txt".
+directory, create and activate a python environment and run "pip3 install -r requirements.txt".
 
 ## Project Layout
 
