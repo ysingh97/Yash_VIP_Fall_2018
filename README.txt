@@ -1,1 +1,0 @@
-Contains audio synthesis code.
