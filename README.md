@@ -19,14 +19,23 @@ we just stick to my voice.
 
 ## Dependencies
 
+<<<<<<< HEAD
 The dependencies are listed in the requirement.txt file. Navigate to the root
-directory, create and activate a python environment and run "pip3 install -r requirements.txt".
+directory, create and activate a python environment and run "pip install -r requirements.txt".
+=======
+1. The dependencies are listed in the requirement.txt file. Navigate to the root
+directory, create and activate a python environment and run "pip install -r requirements.txt".
+>>>>>>> 141df51ae6728cfbca17a5e76d0a8e6d49a72bed
+
+2. You will need to go to http://download.magenta.tensorflow.org/models/nsynth/wavenet-ckpt.tar and extract
+it in the root directory (Yash_VIP_Fall_2018). The download might take a while as
+it is large, which is why I couldn't upload it to github.
 
 ## Project Layout
 
 The project is organized as follows. Keep this layout.
 
-* project root
+* Yash_VIP_Fall_2018
   * voice_mimicry
     * **Lyrebird.py**
   * audio_synthesis
@@ -45,14 +54,14 @@ The project is organized as follows. Keep this layout.
           * **drums.wav**
           * **cello.wav**
         * voice_recordings
-  * wavenet-ckpt.tar NOTE: You will need to download this from http://download.magenta.tensorflow.org/models/nsynth/wavenet-ckpt.tar and then extract it here. It was too large to upload
-  to github.
+  * wavenet-ckpt NOTE: You will need to download this from http://download.magenta.tensorflow.org/models/nsynth/wavenet-ckpt.tar and then extract it here. It was too large to upload
+  to github. Might take a little while to download.
 
   This program allows you to record your voice, and then mix it with an instrument.
 
   Example Flow:
 
-  1. Extract wavenet-ckpt.tar.
+  1. Extract wavenet-ckpt.tar to root directory.
   2. Navigate to audio_synthesis subdirectory.
   3. Run RecordAndInterpolate.py
   4. When it says, "Recording Audio", say something like, "Hey Shimi, mix my voice with the (**drums** or **cello**)." As long as it has either "drums" or "cello", it will work.
